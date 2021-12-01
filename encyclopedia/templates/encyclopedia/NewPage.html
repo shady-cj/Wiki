@@ -1,0 +1,15 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %} 
+	Create New page
+{% endblock %}
+
+{% block body %}
+	<blockquote style="color:red; font-size:30px;font-weight:500; font-style:italic;">{{message}}</blockquote>
+	<form action="{% url 'NewPage' %}" method="post">
+		{% csrf_token %}
+		<input type="text" name="title" placeholder="Enter the title" required><br><br>
+		<textarea name="content" placeholder="Enter your markdown content" required></textarea><br>
+		<input name="Save" type="submit" value="save">
+	</form>
+{% endblock %}

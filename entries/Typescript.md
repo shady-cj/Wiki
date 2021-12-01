@@ -1,0 +1,2 @@
+# Typescript 
+TypeScript is a **programming language** developed and maintained by **Microsoft**. It is a strict syntactical superset of [JavaScript](/TITLE/Javascript) and adds optional static typing to the language.
